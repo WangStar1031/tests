@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+
+		<style type="text/css">
+			.badge.alert-danger {font-size: 11pt;}
+			.panel-info .panel-body .panel-body { background-color: #F2F2F2;}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="container"><ali.texa000>
+				<div class="row">
+					<div class="col-lg-3">
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">Navigation</a>
+							</div>
+
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="/">All Tests</a></li>
+								</ul>
+							</div>
+
+							<br>
+							<a class="navbar-brand" href="#">Search</a>
+							<form class="form text-cente search" role="search" method="get" action="/">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search" name="search" value="">
+									<button type="submit" class="btn btn-info">Search test</button>
+								</div>
+							</form>
+						</nav>
+
+						<div class="text-center">
+							<!-- job-work-tests - right -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-0441999456142131"
+							     data-ad-slot="5657376989"
+							     data-ad-format="auto"></ins>
+						  	<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			     		</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-info">
+							<div class="panel-heading">Django Test</div>
+				<div class="panel-body" id="questions-list">
+					<div class="row">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="find-question" class="col-sm-2 control-label text-left">Search Questions:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="find-question">
+								</div>
+							</div>
+						</div>
+					</div>
+																<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following code snippet for a Django Model:  class Salary(models.Model):         amount = models.PositiveIntergerField(help_text=&#39;eg 8000&#39;)     retired = models.BooleanField(help_text=&#39;...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">results = Salary.objects.exclude(retired=true, amount__lt=7300).exclude(retired=true,amount__gt=7300) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">from django.db.models import Q results = Salary.filter(~Q(amount=7300),retired=True) <span class="badge alert-danger">78.0%</span></div>
+																						<div class="alert alert-warning" role="alert">results = Salary.objects.filtered(retired=True, amount__ne=7300) <span class="badge alert-danger">21.0%</span></div>
+																						<div class="alert " role="alert">from django.db.models import Q results = Salary.filter(Q(amount=7300),retired=True) <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following Python string representing a human readable date and time:       dt = &#39;Jan 14 2009 11:00PM&#39;   Which of the following code snippets will convert the above string to a Python D...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">date_object  =  time.strptime(dt, &#39;%b %d %Y %I:%M%p&#39;) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">date_object = datetime.strptime(dt, &#39;%b %d %Y %I:%M%p&#39;) <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">date_object = datetime.strptime(dt, &#39;%B %D %Y %I:%M%p&#39;) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">date_object = time.strptime(dt, &#39;%b %d %Y %I:%M%p&#39;) <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider two Django QuerySets query_set_1 and query_set_2 from two different models.  Which of the following code snippets is the most performant when concatenating the two QuerySets into one list?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">from itertools import chain result_list = list(chain(query_set_1,query_set_2)) <span class="badge alert-danger">88.0%</span></div>
+																						<div class="alert " role="alert">result_list = query_set_1 | query_set_2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">from django.db.models import Q result_list = Q(query_set_1) | Q(query_set_1) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">from itertools import chain result_list = chain(query_set_1, query_set_2) <span class="badge alert-danger">11.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What does the &quot;with&quot; template tag do?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">It adds its argument to the value. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">It caches a complex under a simpler name. <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">It filters the contents of the blog through one or more filters. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of these. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What does the django.core.context_processors.static() method do?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">It takes a path and urljoins it with the static prefix STATIC_URL. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">It adds STATIC_URL to every template context rendered with RequestContext contexts. <span class="badge alert-danger">93.0%</span></div>
+																						<div class="alert " role="alert">It populates a template variable with the static prefix STATIC_URL to be used as a variable or directly. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of these. <span class="badge alert-danger">6.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is the best way to extend the Django user model with extra custom fields in addition to the fields already provided?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">Use a  a proxy model based on django.contrib.auth.models.User. <span class="badge alert-danger">33.0%</span></div>
+																						<div class="alert " role="alert">Subclass django.contrib.auth.models.AbstractUser and add the extra fields. <span class="badge alert-danger">14.0%</span></div>
+																						<div class="alert " role="alert">Subclass django.contrib.auth.models.AbstractBaseUser and add the extra fields. <span class="badge alert-danger">9.0%</span></div>
+																						<div class="alert alert-warning" role="alert">Use a one-to-one relationship to a model containing the extra fields. <span class="badge alert-danger">42.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is the default max_length value of a SlugField class in Django?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">50 <span class="badge alert-danger">94.0%</span></div>
+																						<div class="alert " role="alert">100 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">25 <span class="badge alert-danger">5.0%</span></div>
+																						<div class="alert " role="alert">150 <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following classes uses an HTTP 304 status code?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">HttpResponseNotModified <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">HttpResponseRedirect <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">HttpResponseForbidden <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">HttpResponseServerError <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following django.template.loader functions will take a list of template names and return the first template that exists?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">find_one_template <span class="badge alert-danger">6.0%</span></div>
+																						<div class="alert " role="alert">find_template <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">get_template <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">select_template <span class="badge alert-danger">93.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following gets called when a view raises an exception?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">view_exception() <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">process_exception() <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">execution_exception() <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">controller_exception() <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following happens when process_exception() returns &quot;None&quot;?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">The template response will be applied. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">The response middleware will be applied. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">The default exception handling will be applied. <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">None of these. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is a built-in BaseCommand subclass?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">AppCommand <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">HelperCommand <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">HandlerCommand <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DBCommand <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is false about the django.models.SlugField() model field?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">It is used when performing a query, or as a part of a URL, since by default it ensures uniqueness. <span class="badge alert-danger">53.0%</span></div>
+																						<div class="alert alert-warning" role="alert">To create a slug based on another field automatically in the admin, prepopulated_fields has to be used. <span class="badge alert-danger">40.0%</span></div>
+																						<div class="alert " role="alert">It can only contain letters, numbers, underscores or hyphens. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Slugs can created in Django templates using the builtin filter, &quot;django.template.defaultfilters.slugify&quot;, formatted as {{ some_text|slugify }}. <span class="badge alert-danger">6.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is not a built-in Django template loader class?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">file.Loader <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">cached.Loader <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">eggs.Loader <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">app_directories.Loader <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is not a predefined log level in Django?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">DEBUG <span class="badge alert-danger">6.0%</span></div>
+																						<div class="alert " role="alert">INFO <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">WARNING <span class="badge alert-danger">12.0%</span></div>
+																						<div class="alert alert-success" role="alert">FATAL <span class="badge alert-danger">81.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statement is false about the django.http.HttpRequest.get_host() method ?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">If DEBUG = False and ALLOWED_HOSTS= [] the method will raise SuspiciousOperation exception resulting in an HTTP Error 500 Internal server error. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">The method will fail when the host is behind multiple proxies, in this case one solution is to use middleware which will rewrite the proxy headers. <span class="badge alert-danger">7.0%</span></div>
+																						<div class="alert alert-success" role="alert">This method is invoked if some code accesses the Host header from request.META, thus providing a security measure to prevent an attacker from poisoning caches and password reset emails with links to malicious hosts by submitting requests with a fake HTTP Host header. <span class="badge alert-danger">85.0%</span></div>
+																						<div class="alert " role="alert">The method uses information from the HTTP_X_FORWARDED_HOST and HTTP_HOST headers, in that order, or a combination of SERVER_NAME and SERVER_PORT if the latter does not provide a value. <span class="badge alert-danger">7.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements about database transactions in Django is false?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">&quot;atomic&quot; blocks allows the creation of blocks of code within which the atomicity on the database is guaranteed. <span class="badge alert-danger">12.0%</span></div>
+																						<div class="alert alert-success" role="alert">&quot;atomic&quot; blocks cannot be nested. <span class="badge alert-danger">87.0%</span></div>
+																						<div class="alert " role="alert">&quot;atomic&quot; can be used as a decorator. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">&quot;atomic&quot; can be used as a context manager. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements are true about the ImageField class?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">It inherits all attributes and methods from the FileField class. <span class="badge alert-danger">39.0%</span></div>
+																						<div class="alert alert-warning" role="alert">It validates that the uploaded object is a valid image. <span class="badge alert-danger">30.0%</span></div>
+																						<div class="alert " role="alert">Its instances are created as varchar(200) columns in the database. <span class="badge alert-danger">3.0%</span></div>
+																						<div class="alert alert-warning" role="alert">It&#39;s default form widget is a ClearableFileInput. <span class="badge alert-danger">27.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements is true about Django&#39;s default implementation of the authentication system?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Django stores passwords in plain text on the user model. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">It returns a UserAccount object is the password for a given username is authenticated. <span class="badge alert-danger">7.0%</span></div>
+																						<div class="alert " role="alert">Permissions can only be set on a per type of object basis. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">django.contrib.auth will ensure that add, change and delete permissions are created for each Django model defined in an installed application. <span class="badge alert-danger">92.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements is true about the django.template.RequestContext class?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">It takes a Context object as its first argument. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">It takes an HttpRequest as its first argument. <span class="badge alert-danger">92.0%</span></div>
+																						<div class="alert " role="alert">It does not automatically the context with variables. <span class="badge alert-danger">7.0%</span></div>
+																						<div class="alert " role="alert">It can only be given one context processor. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+									</div>
+					</div>
+	</div>
+</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 text-center"><ali.texa000>
+					</div>
+				</div>
+			</div>
+		</div><ali.texa000>
+
+		<div class="row">
+			<div class="col-lg-12"></div>
+		</div>
+	</body>
+</html>ali.texa

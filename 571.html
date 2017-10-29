@@ -1,0 +1,894 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+
+		<style type="text/css">
+			.badge.alert-danger {font-size: 11pt;}
+			.panel-info .panel-body .panel-body { background-color: #F2F2F2;}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="container"><ali.texa000>
+				<div class="row">
+					<div class="col-lg-3">
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">Navigation</a>
+							</div>
+
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="/">All Tests</a></li>
+								</ul>
+							</div>
+
+							<br>
+							<a class="navbar-brand" href="#">Search</a>
+							<form class="form text-cente search" role="search" method="get" action="/">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search" name="search" value="">
+									<button type="submit" class="btn btn-info">Search test</button>
+								</div>
+							</form>
+						</nav>
+
+						<div class="text-center">
+							<!-- job-work-tests - right -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-0441999456142131"
+							     data-ad-slot="5657376989"
+							     data-ad-format="auto"></ins>
+						  	<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			     		</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-info">
+							<div class="panel-heading">MySQL Test</div>
+				<div class="panel-body" id="questions-list">
+					<div class="row">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="find-question" class="col-sm-2 control-label text-left">Search Questions:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="find-question">
+								</div>
+							</div>
+						</div>
+					</div>
+																<div class="panel panel-default">
+		  					<div class="panel-heading">Below is the table “messages,” please find proper query and result from the choices below.  Id   Name   Other_Columns ------------------------- 1    A       A_data_1 2    A       A_data_2 3    A   ...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">select * from (select * from messages GROUP BY id DESC) AS x ORDER BY name  Result:             3    A       A_data_3         5    B       B_data_2         6    C       C_data_1 <span class="badge alert-danger">3.0%</span></div>
+																						<div class="alert " role="alert">select * from messages where name =Desc  Result:         1    A       A_data_1         2    A       A_data_2         3    A       A_data_3 <span class="badge alert-danger">3.0%</span></div>
+																						<div class="alert alert-success" role="alert">select * from messages group by name  Result:         1    A       A_data_1         4    B       B_data_1         6    C       C_data_1 <span class="badge alert-danger">92.0%</span></div>
+																						<div class="alert " role="alert">Answer A and B <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Can you run multiple MySQL servers on a single machine?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">No <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Yes <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Choose the appropriate query for the Products table where data should be displayed primarily in ascending order of the ProductGroup column. Secondary sorting should be in descending order of the Cu...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Select * from Products order by CurrentStock,ProductGroup <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select * from Products order by CurrentStock DESC,ProductGroup <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select * from Products order by ProductGroup,CurrentStock <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Select * from Products order by ProductGroup,CurrentStock DESC <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following queries:  create table foo (id int primary key auto_increment, name int); create table foo2 (id int auto_increment primary key, foo_id int references foo(id) on delete cascad...</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">Two tables are created <span class="badge alert-danger">46.0%</span></div>
+																						<div class="alert " role="alert">If a row in table foo2, with a foo_id of 2 is deleted, then the row with id = 2 in table foo is automatically deleted <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Those queries are invalid <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">If a row with id = 2 in table foo is deleted, all rows with foo_id = 2 in table foo2 are deleted <span class="badge alert-danger">53.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following select statement and its output:   SELECT * FROM table1 ORDER BY column1;    Column1  --------  1  2  2  2  2  2  3   Given the above output, which one of the following comma...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">DELETE FIRST 4 FROM table1 WHERE column1=2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DELETE 4 FROM table1 WHERE column1=2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DELETE WHERE column1=2 LIMIT 4 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">DELETE FROM table1 WHERE column1=2 LIMIT 3 <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">DELETE FROM table1 WHERE column1=2 LEAVING 1 <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following table definition:    CREATE TABLE table1 (          column1 INT,          column2 INT,          column3 INT,          column4 INT )    Which one of the following is the corre...</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">ALTER TABLE table1 ADD column2a INT AFTER column2 <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">MODIFY TABLE table1 ADD column2a AFTER column2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">INSERT INTO table1 column2a AS INT AFTER column2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">ALTER TABLE table1 INSERT column2a INT AFTER column2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">CHANGE TABLE table1 INSERT column2a BEFORE column3  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Columns are always added after the last column <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following table structure of students:  rollno int  name varchar(20)  course varchar(20)   What will be the query to display the courses in which the number of students enrolled is mor...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Select course from students where count(course) &gt; 5; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select course from students where count(*) &gt; 5 group by course; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select course from students group by course; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Select course from students group by course having count(*) &gt; 5; <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Select course from students group by course where count(*) &gt; 5; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select course from students where count(group(course)) &gt; 5; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Select count(course) &gt; 5 from students; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following tables:   books  ------  bookid  bookname  authorid  subjectid  popularityrating (the popularity of the book on a scale of 1 to 10)  language (such as French, English, German...</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">select authorname from authors where authorid in (select authorid from books where popularityrating&lt;5) <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">select authorname from authors where authorid in (select authorid from books where popularityrating&lt;=5) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">select authorname from authors where authorid in (select bookid from books where popularityrating&lt;5) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">select authorname from authors where authorid in (select authorid from books where popularityrating in (0,5)) <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the following tables:  Books ------ BookId BookName AuthorId SubjectId PopularityRating (the popularity of the book on a scale of 1 to 10) Language (such as French, English, German etc)  S...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">select subject,count(*) as Books from books,subjects where books.popularityrating &gt; 7 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">select subject,count(*) as Books from books,subjects where books.authorid=subjects.authorid and books.popularityrating &gt; 7 group by subjects.subject <span class="badge alert-danger">7.0%</span></div>
+																						<div class="alert " role="alert">select subject,count(*) as Books from books,subjects where books.subjectid=subjects.subjectid and books.popularityrating = 7 group by subjects.subject <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">select subject,count(*) as Books from books,subjects where books.subjectid=subjects.subjectid and books.popularityrating &gt; 7 group by subjects.subject <span class="badge alert-danger">92.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Consider the query:   SELECT name  FROM Students  WHERE name LIKE &#39;_a%&#39;;   Which names will be displayed?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Names starting with &quot;a&quot; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Names containing &quot;a&quot; as the second lette <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Names starting with &quot;a&quot; or &quot;A&quot; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Names containing &quot;a&quot; as any letter except the first <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Examine the data in the employees table given below:   last_name    department_id     salary  ALLEN         10                        3000  MILLER        20                      1500  King         ...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SELECT * FROM employees where salary &gt; (SELECT MIN(salary) FROM employees GROUP BY department_id); <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM employees WHERE salary = (SELECT AVG(salary) FROM employees GROUP BY department_id); <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT distinct department_id FROM employees Where salary &gt; ANY (SELECT AVG(salary) FROM employees GROUP BY department_id); <span class="badge alert-danger">52.0%</span></div>
+																						<div class="alert alert-warning" role="alert">SELECT department_id FROM employees WHERE SALARY &gt; ALL (SELECT AVG(salary) FROM employees GROUP BY department_id); <span class="badge alert-danger">42.0%</span></div>
+																						<div class="alert " role="alert">SELECT department_id FROM employees WHERE salary &gt; ALL (SELECT AVG(salary) FROM employees GROUP BY AVG(SALARY)); <span class="badge alert-danger">4.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Examine the query:-           select (2/2/4) from tab1;  where tab1 is a table with one row. This would give a result of: </div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">4 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">2 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">1 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">.5 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">.25  <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">8 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">24 <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Examine the two SQL statements given below:   SELECT last_name, salary, hire_date FROM EMPLOYEES ORDER BY salary DESC  SELECT last_name, salary, hire_date FROM EMPLOYEES ORDER BY 2 DESC  What is tr...</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">The two statements produce identical results <span class="badge alert-danger">62.0%</span></div>
+																						<div class="alert alert-warning" role="alert">The second statement returns an error <span class="badge alert-danger">37.0%</span></div>
+																						<div class="alert " role="alert">There is no need to specify DESC because the results are sorted in descending order by default <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above statments is correct <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">How can a InnoDB database be backed up without locking the tables?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">mysqldump --single-transaction db_name <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">mysqldump --force db_name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">mysqldump --quick db_name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">mysqldump --no-tablespaces db_name <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">How can an user quickly rename a MySQL database for InnoDB?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">He cannot rename any MySQL database <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">By using: RENAME DATABASE db_old_name TO db_new_name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">By using: RENAME DATABASE TO db_new_name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">By creating the new empty database, then rename each table using: RENAME TABLE db_old_name.table_name TO db_new_name.table_name <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">How will you change &quot;Hansen&quot; into &quot;Nilsen&quot; in the LastName column in the Persons Table? </div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">UPDATE Persons SET LastName = &#39;Nilsen&#39; WHERE LastName = &#39;Hansen&#39;  <span class="badge alert-danger">91.0%</span></div>
+																						<div class="alert " role="alert">UPDATE Persons SET LastName = &#39;Hansen&#39; INTO LastName = &#39;Nilsen&#39;  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SAVE Persons SET LastName = &#39;Nilsen&#39; WHERE LastName = &#39;Hansen&#39;  <span class="badge alert-danger">8.0%</span></div>
+																						<div class="alert " role="alert">SAVE Persons SET LastName = &#39;Hansen&#39; INTO LastName = &#39;Nilsen&#39; <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">If you try to perform an arithmetic operation on a column containing NULL values, the output will be:</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">NULL <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">An error will be generated <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Cannot be determined <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Is it possible to insert several rows into a table with a single INSERT statement?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">No <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Yes <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Is the FROM clause necessary in every SELECT statement?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Yes <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">No <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">MySQL supports 5 different int types. Which one takes 3 bytes?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">TINYINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">MEDIUMINT <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">SMALLINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">INT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">BIGINT <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">State whether true or false:   In the &#39;where clause&#39; of a select statement, the AND operator displays a row if any of the conditions listed are true. The OR operator displays a row if all of the co...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">True <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">False <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">State whether true or false:   Transactions and commit/rollback are supported by MySQL using the MyISAM engine</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">True <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">False <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Suppose a table has the following records:  +--------------+-------------+----------------+ | Item         | Price       | Brand          | +--------------+-------------+----------------+ | Watch  ...</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">select item, brand, price from items where max(price) order by item <span class="badge alert-danger">85.0%</span></div>
+																						<div class="alert " role="alert">select  * from items where price = max group by item <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">select item, brand, max(price) from items group by item <span class="badge alert-danger">14.0%</span></div>
+																						<div class="alert " role="alert">select * from items where price &gt; 200 order by item <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">The Flush statement cannot be used for:</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Closing any open tables in the table cache <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Closing open connections <span class="badge alert-danger">90.0%</span></div>
+																						<div class="alert " role="alert">Flushing the log file <span class="badge alert-danger">9.0%</span></div>
+																						<div class="alert " role="alert">Flushing the host cache <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">The REPLACE statement is:</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Same as the INSERT statement <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Like INSERT, except that if an old row in the table has the same value as a new row for a PRIMARY KEY or a UNIQUE index, the old row is deleted before the new row is inserted <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">There is no such statement as REPLACE <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What are MySQL Spatial Data Types in the following list?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">GEOMETRY <span class="badge alert-danger">36.0%</span></div>
+																						<div class="alert " role="alert">CIRCLE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SQUARE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">POINT <span class="badge alert-danger">33.0%</span></div>
+																						<div class="alert alert-warning" role="alert">POLYGON <span class="badge alert-danger">30.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What does DETERMINISTIC mean in the creation of a function?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">The function returns no value <span class="badge alert-danger">8.0%</span></div>
+																						<div class="alert alert-success" role="alert">The function always returns the same value for the same input <span class="badge alert-danger">91.0%</span></div>
+																						<div class="alert " role="alert">The function returns the input value <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What does the term &quot;overhead&quot; mean in MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">Temporary diskspace that the database uses to run some of the queries <span class="badge alert-danger">83.0%</span></div>
+																						<div class="alert " role="alert">The size of a table <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">A tablespace name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">16.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is NDB?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">An in-memory storage engine offering high-availability and data-persistence features <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">A filesystem <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">An SQL superset <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">MySQL scripting language <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is the correct SQL syntax for returning all the columns from a table named &quot;Persons&quot; sorted REVERSE alphabetically by &quot;FirstName&quot;? </div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SELECT * FROM Persons WHERE FirstName ORDER BY FirstName DESC  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM Persons SORT REVERSE &#39;FirstName&#39;  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM Persons ORDER BY -&#39;FirstName&#39;  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT * FROM Persons ORDER BY FirstName DESC  <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is the maximum size of a row in a MyISAM table?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">No limit <span class="badge alert-danger">10.0%</span></div>
+																						<div class="alert " role="alert">OS specific <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">65,534 <span class="badge alert-danger">90.0%</span></div>
+																						<div class="alert " role="alert">2&#39;147&#39;483&#39;648 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">128 <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is the name of the utility used to extract NDB configuration information?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">ndb_config <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">cluster_config <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">ndb --config <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">configNd <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is true about the ENUM data type?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">An enum value may be a user variable <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">An enum may contain number enclosed in quotes <span class="badge alert-danger">55.0%</span></div>
+																						<div class="alert " role="alert">An enum cannot contain an empty string <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">An enum value may be NULL <span class="badge alert-danger">44.0%</span></div>
+																						<div class="alert " role="alert">None of the above is true <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is wrong with the following query:  select * from Orders where OrderID = (select OrderID from OrderItems where ItemQty &gt; 50)</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">In the sub query, &#39;*&#39; should be used instead of &#39;OrderID&#39; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">The sub query can return more than one row, so, &#39;=&#39; should be replaced with &#39;in&#39; <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">The sub query should not be in parenthesis <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of the above <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What is wrong with the following statement?   create table foo (id int auto_increment, name int);</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Nothing <span class="badge alert-danger">8.0%</span></div>
+																						<div class="alert alert-success" role="alert">The id column cannot be auto incremented because it has not been defined as a primary key <span class="badge alert-danger">91.0%</span></div>
+																						<div class="alert " role="alert">It is not spelled correctly. It should be: CREATE TABLE foo (id int AUTO_INCREMENT, name int); <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What privilege do you need to create a function?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">UPDATE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">CREATE ROUTINE <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">SELECT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">CREATE FUNCTION <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">No specific privilege <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What will happen if two tables in a database are named rating and RATING?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">This is not possible as table names are case in-sensitive (rating and RATING are treated as same name) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">This is possible as table names are case sensitive (rating and RATING are treated as different names) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">This is possible on UNIX/LINUX and not on Windows platform <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">This is possible on Windows and not on UNIX/LINUX platforms <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">This depends on lower_case_table_names system variable <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">What will happen if you query the emp table as shown below:   select empno, DISTINCT ename, Salary from emp;</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">EMPNO, unique value of ENAME and then SALARY are displayed <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">EMPNO, unique value ENAME and unique value of SALARY are displayed <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DISTINCT is not a valid keyword in SQL <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">No values will be displayed because the statement will return an error <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">When running the following SELECT query:  SELECT ID FROM (     SELECT ID, name FROM (         SELECT *               FROM employee     ) );  The error message &#39;Every derived table must have its own...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SELECT ID FROM (     SELECT ID AS SECOND_ID, name FROM (         SELECT *               FROM employee     ) ); <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT ID FROM (     SELECT ID, name AS NAME FROM (         SELECT *               FROM employee     ) ); <span class="badge alert-danger">7.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT ID FROM (     SELECT ID, name FROM (         SELECT *               FROM employee     ) AS T ) AS T; <span class="badge alert-danger">84.0%</span></div>
+																						<div class="alert " role="alert">SELECT ID AS FIRST_ID FROM (     SELECT ID, name FROM (         SELECT *               FROM employee     ) ); <span class="badge alert-danger">7.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which command will make a backup on the whole database except the tables sessions and log?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">mysqldump db_name sessions log &gt; backup.sql <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">mysqldump db_name | grep -vv -E &quot;sessions|log&quot; &gt; backup.sql <span class="badge alert-danger">33.0%</span></div>
+																						<div class="alert alert-success" role="alert">mysqldump db_name --ignore-table db_name.sessions db_name.log &gt; backup.sql <span class="badge alert-danger">66.0%</span></div>
+																						<div class="alert " role="alert">mysqldump db_name --except-table=db_name.sessions --except-table=db_name.log &gt; backup.sql <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which datatype is used to store binary data in MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">BLOB <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">BIGINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">INT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Both BLOB and BIGINT <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following are not Numeric column types?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">BIGINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">LARGEINT <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">SMALLINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DOUBLE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">DECIMAL <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following are true in case of Indexes for MYISAM Tables?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">Indexes can have NULL values <span class="badge alert-danger">34.0%</span></div>
+																						<div class="alert alert-warning" role="alert">BLOB and TEXT columns can be indexed <span class="badge alert-danger">34.0%</span></div>
+																						<div class="alert " role="alert">Indexes per table cannot be more than 16 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">Columns per index cannot be more than 16 <span class="badge alert-danger">30.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following commands will list the tables of the current database?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">SHOW TABLES <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">DESCRIBE TABLES <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SHOW ALL TABLES <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">LIST TABLES <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following formats does the date field accept by default?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">DD-MM-YYYY <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">YYYY-DD-MM <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">YYYY-MM-DD <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">MM-DD-YY <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">MMDDYYYY <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is a correct way to show the last queries executed on MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">First execute SET GLOBAL log_output = &#39;TABLE&#39;;  Then execute SET GLOBAL general_log = &#39;ON&#39;; The last queries executed are saved in the table mysql.general_log <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Edit the MySQL config file (mysql.con) and add the following line  log = /var/log/mysql/mysql.log <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Execute VIEW .mysql_history <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Restart MySQL using the following line tail -f /var/log/mysql/mysql.log <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is an alternative to groupwise maximum ranking (ex. ROW_NUMBER() in MS SQL)?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Using subqueries <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Using variables in a MySQL query <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Using self-join <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">MySQL also supports ROW_NUMBER() <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is an alternative to Subquery Factoring (ex. the &#39;WITH&#39; clause in MS SQL Server)?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">The &#39;IN&#39; clause <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Using temporary tables and inline views <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">The &#39;INNER JOIN&#39; clause <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Using subqueries <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is not a MySQL statement?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">ENUMERATE <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">EXPLAIN <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">KILL <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">LOAD DATA <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SET <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is not a Table Storage specifier in MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">InnoDB <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">MYISAM <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">BLACKHOLE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">STACK <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is the best MySQL data type for currency values?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SMALLINT <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">DECIMAL(19,4) <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">VARCHAR(32) <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">BIGINT <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is the best way to disable caching for a query?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Add the /*!no_query_cache*/ comment to the query. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Flush the whole cache with the command: FLUSH QUERY CACHE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Reset the query cache with the command: RESET QUERY CACHE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Use the SQL_NO_CACHE option in the query. <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is the best way to insert a row, and to update an existing row, using a MySQL query?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">Use MERGE statement <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">Use INSERT ... ON DUPLICATE KEY UPDATE statement <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Use ADD UNIQUE statement <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Use REPLACE statement <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is the best way to modify a table to allow null values?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">ALTER TABLE table_name MODIFY column_name varchar(255) null <span class="badge alert-danger">77.0%</span></div>
+																						<div class="alert " role="alert">ALTER TABLE table_name MODIFY column_name VARCHAR(255) <span class="badge alert-danger">11.0%</span></div>
+																						<div class="alert " role="alert">ALTER TABLE table_name CHANGE column_name column_name type DEFAULT NULL <span class="badge alert-danger">11.0%</span></div>
+																						<div class="alert " role="alert">ALTER table_name MODIFY column_name varchar(255) null <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following is the correct way to determine duplicate values?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SELECT column_duplicated, sum(*) amount FROM table_name WHERE amount &gt; 1 GROUP BY column_duplicated <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT column_duplicated, COUNT(*) amount FROM table_name WHERE amount &gt; 1 GROUP BY column_duplicated <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT column_duplicated, sum(*) amount FROM table_name GROUP BY column_duplicated HAVING amount &gt; 1 <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT column_duplicated, COUNT(*) amount FROM table_name GROUP BY column_duplicated HAVING amount &gt; 1 <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following relational database management systems is simple to embed in a larger program?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">MySQL <span class="badge alert-danger">25.0%</span></div>
+																						<div class="alert alert-success" role="alert">SQLite <span class="badge alert-danger">75.0%</span></div>
+																						<div class="alert " role="alert">Both <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following results in 0 (false)?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">&quot;EXPERTRATING&quot; LIKE &quot;EXP%&quot; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">BINARY &quot;EXPERTRATING&quot; LIKE &quot;EXP%&quot; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">BINARY &quot;EXPERTRATING&quot; LIKE &quot;Exp%&quot; <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">All will result in 1 (true) <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements are true about SQL injection attacks?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">Wrapping all variables containing user input by a call to mysql_real_escape_string() makes the code immune to SQL injections. <span class="badge alert-danger">87.0%</span></div>
+																						<div class="alert " role="alert">Parametrized queries do not make code less vulnearable to SQL injections. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SQL injections are not possible, if only emulated prepared statements are used. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Usage of later versions of MySQL, validation, and explicit setting of the charset of user input are valid measures to decrease vulnerability to SQL injections. <span class="badge alert-danger">12.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements are true?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">Names of databases, tables and columns can be up to 64 characters in length <span class="badge alert-danger">52.0%</span></div>
+																						<div class="alert alert-warning" role="alert">Alias names can be up to 255 characters in length <span class="badge alert-danger">47.0%</span></div>
+																						<div class="alert " role="alert">Names of databases, tables and columns can be up to 256 characters in length <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Alias names can be up to 64 characters in length <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements grants permission to Peter with password Software?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">GRANT ALL ON testdb.* TO peter PASSWORD &#39;Software&#39; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">GRANT ALL ON testdb.* TO peter IDENTIFIED by &#39;Software&#39; <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">GRANT ALL OF testdb.* TO peter PASSWORD &#39;Software&#39; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">GRANT ALL OF testdb.* TO peter IDENTIFIED by &#39;Software&#39; <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements is true regarding character sets in MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">The default character set of MySQL is UTF-8. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">lang.cnf sets the default character set for MySQL databases. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">SET CHARSET utf8 will set the character set of data to be imported to UTF-8. <span class="badge alert-danger">20.0%</span></div>
+																						<div class="alert alert-success" role="alert">None of these. <span class="badge alert-danger">80.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements is true regarding multi-table querying in MySQL?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">JOIN queries are faster than WHERE queries. <span class="badge alert-danger">20.0%</span></div>
+																						<div class="alert " role="alert">WHERE queries are faster than JOIN queries. <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-warning" role="alert">INNER queries are faster than JOIN queries. <span class="badge alert-danger">20.0%</span></div>
+																						<div class="alert alert-success" role="alert">WHERE &amp; INNER offer the same performance in terms of speed. <span class="badge alert-danger">60.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following statements is used to change the structure of a table once it has been created?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">CHANGE TABLE  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">MODIFY TABLE  <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">ALTER TABLE <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">UPDATE TABLE  <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following will dump the whole MySQL database to a file?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">mysql -e &quot;select * from myTable&quot; -u myuser -pxxxxxxxxx mydatabase &gt; mydumpfile.txt <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">mysql -e &quot;select * from myTable&quot; mydatabase &gt; mydumpfile.txt <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * from myTable FIELDS TERMINATED BY &#39;,&#39; ENCLOSED BY &#39;&quot;&#39; LINES TERMINATED BY &#39;
+&#39; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">None of the above. <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following will raise MySQL&#39;s version of an error?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">SIGNAL <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">RAISE <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">ERROR <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of these. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following will reset the MySQL password for a particular user?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">UPDATE mysql.user SET Password=PASSWORD(&#39;password&#39;) WHERE User=&#39;username&#39;; <span class="badge alert-danger">27.0%</span></div>
+																						<div class="alert " role="alert">UPDATE mysql.user SET Password=&#39;password&#39; WHERE User=&#39;username&#39;; <span class="badge alert-danger">18.0%</span></div>
+																						<div class="alert " role="alert">UPDATE mysql.user SET Password=RESET(&#39;password&#39;) WHERE User=&#39;username&#39;; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">None of the above. <span class="badge alert-danger">54.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following will restore a MySQL DB from a .dump file?</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">mysql -u&lt;user&gt; -p &lt; db_backup.dump <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">mysql -u&lt;user&gt; -p&lt;password&gt; &lt; db_backup.dump <span class="badge alert-danger">85.0%</span></div>
+																						<div class="alert " role="alert">mysql -u&lt;user&gt; -p &lt;password&gt; &lt; db_backup.dump <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">mysql -u&lt;user&gt; -p&lt;password&gt; &gt; db_backup.dump <span class="badge alert-danger">14.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which of the following will show when a table in a MySQL database was last updated?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">Using the following query: SELECT UPDATE_TIME FROM   information_schema.tables WHERE  TABLE_SCHEMA = &#39;database_name&#39; AND TABLE_NAME = &#39;table_name&#39; <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Creating an on-update trigger to write timestamp in a custom table, then querying the custom table <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">Getting the &quot;last modified&quot; timestamp of the corresponding database file in the file system <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">None of these. <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which one of the following correctly selects rows from the table myTable that have NULL in column column1? </div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">SELECT * FROM myTable WHERE column1 IS NULL <span class="badge alert-danger">91.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM myTable WHERE column1 = NULL <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM myTable WHERE column1 EQUALS NULL   <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM myTable WHERE column1 NOT NULL   <span class="badge alert-danger">8.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM myTable WHERE column1 CONTAINS NULL <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which one of the following must be specified in every DELETE statement?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-success" role="alert">Table Name  <span class="badge alert-danger">100.0%</span></div>
+																						<div class="alert " role="alert">Database name <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">LIMIT clause <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">WHERE clause <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+																			<div class="row">
+								<div class="col-lg-12 text-center">
+									<!-- job-work-tests - content -->
+									<ins class="adsbygoogle"
+									     style="display:inline-block;width:728px;height:90px"
+									     data-ad-client="ca-pub-0441999456142131"
+									     data-ad-slot="1087576587"></ins>
+								     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								</div>
+							</div>
+						
+											<div class="panel panel-default">
+		  					<div class="panel-heading">Which query will return values containing strings &quot;Pizza&quot;, &quot;Burger&quot;, or &quot;Hotdog&quot; in the database?</div>
+						  	<div class="panel-body">
+																			<div class="alert alert-warning" role="alert">SELECT * FROM fiberbox WHERE field REGEXP &#39;Pizza|Burger|Hotdog&#39;; <span class="badge alert-danger">46.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT * FROM fiberbox WHERE field LIKE &#39;%Pizza%&#39;                            OR field LIKE &#39;%Burger%&#39;                            OR field LIKE &#39;%Hotdog%&#39;;   <span class="badge alert-danger">53.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM fiberbox WHERE field = &#39;%Pizza%&#39;                            OR field = &#39;%Burger%&#39;                            OR field = &#39;%Hotdog%&#39;;   <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT * FROM fiberbox WHERE field = &#39;?Pizza?&#39;                            OR field = &#39;?Burger?&#39;                            OR field = &#39;?Hotdog?&#39;;   <span class="badge alert-danger">0.0%</span></div>
+																		</div>
+						</div>
+												
+											<div class="panel panel-default">
+		  					<div class="panel-heading">You want to display the titles of books that meet the following criteria:   1. Purchased before November 11, 2002  2. Price is less than $500 or greater than $900  You want to sort the result by th...</div>
+						  	<div class="panel-body">
+																			<div class="alert " role="alert">SELECT book_title FROM books WHERE price between 500 and 900 AND purchase_date &lt; &#39;2002-11-11&#39; ORDER BY purchase_date; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT book_title FROM books WHERE price IN (500, 900) AND purchase_date&lt; &#39;2002-11-11&#39; ORDER BY purchase date ASC; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert " role="alert">SELECT book_title FROM books WHERE price &lt; 500 OR&gt;900 AND purchase_date DESC; <span class="badge alert-danger">0.0%</span></div>
+																						<div class="alert alert-success" role="alert">SELECT book_title FROM books WHERE (price &lt; 500 OR price &gt; 900) AND purchase_date &lt; &#39;2002-11-11&#39; ORDER BY purchase_date DESC; <span class="badge alert-danger">100.0%</span></div>
+																		</div>
+						</div>
+												
+									</div>
+					</div>
+	</div>
+</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 text-center"><ali.texa000>
+					</div>
+				</div>
+			</div>
+		</div><ali.texa000>
+
+		<div class="row">
+			<div class="col-lg-12"></div>
+		</div>
+	</body>
+</html>ali.texa
